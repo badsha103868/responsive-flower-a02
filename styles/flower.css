@@ -19,7 +19,16 @@
   /* font-weight: <weight>; */
   font-style: normal;
 }
+
+
+
 /* shared style */
+.display-flex{
+  display: flex;
+}
+.bg-light{
+  background-color:#FFFFFF;
+}
 .dar-1{
  color:#000000;
 }
@@ -35,7 +44,7 @@ color:#111111 ;
 
 .btn-primary{
 background-color:#E95A08;
-font-size: 16px;
+font-size: 1rem;
 font-weight:600 ;
 color: #FFFFFF;
 padding: 26px 50px;
@@ -43,28 +52,28 @@ border-radius: none;
 border: none;
 }
 
+
+
+
 /* nav section */
-nav{
-  display: flex;
-  align-items: center;
+
+.navbar{
   justify-content: space-between;
-  margin: 0 200px;
-  width: 1140px;
+  align-items: center;
   
 }
-nav ul{
-  display: flex;
-  align-items: center;
-}
-nav ul li{
+
+.nav-item{
   list-style:none ;
   margin-right: 50px;
 }
-nav li a{
+.nav-link{
   text-decoration: none;
+  font-weight: 500;
 }
-nav ul li:nth-child(4){
-  margin-right: 0;
+.navbar, .banner{
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .dark-5{
   color: #252432;
@@ -76,9 +85,12 @@ nav ul li:nth-child(4){
   width: 135px;
   height: 82px;
 }
+
+
+
 /* nav responsive part */
 @media screen and (max-width:576px) {
-  nav{
+  .navbar{
     margin: 0 auto;
     padding: 10px 20px;
     justify-content: space-between;
@@ -87,83 +99,72 @@ nav ul li:nth-child(4){
     align-items: center;
 
   }
-  nav li a{
+  nav ul li:nth-child(1),
+  nav ul li:nth-child(2),
+  nav ul li:nth-child(3){
     display: none;
-  }
-  nav ul {
-    display: flex;
-    gap: 0;
-  }
-  nav ul li:nth-child(4){
-    margin-right:0px;
   }
   .logo-img{
     width: 65px;
     height: 35px;
   }
 }
+
+
+
   /* banner section start */
-  .banner-section{
-   margin: 120px 200px;
-  }
  .banner{
   display: flex;
   justify-content: space-between;
-  width: 1140px;
-  height: 461px;
- 
   align-items: end;
+  margin-top: 120px;
+ 
+  height: 461px;
  
  }
  .banner-content{
-  max-width: 570px;
+  width: 50%;
   height:auto;
   margin-bottom: 0;
  }
  .banner-profile-picture{
-  width: 570px;
-  height: 355px;
+  width: 50%;
+  height:365px;
  }
   .banner-title{
-    font-size: 65px;
+    font-size: 4rem;
     font-weight:700;
     margin-bottom: 10px;
   }
   .banner-description{
-    font-size: 20px;
+    font-size:1.25rem;
     font-weight: 400;
     max-width: 570px;
     height: auto;
     margin-bottom: 0;
   }
+
+
   /* banner responsive part */
   @media screen and (max-width:576px) {
-    .banner-section{
-      margin-top: 80px;
-    }
     .banner{
       flex-direction: column-reverse;
-      align-items: center;
+      margin: 0 20px;
       padding: 0 20px;
-       width: 100%;
-      height: auto;
-      gap: 30px;
     }
     .banner-profile-picture{
-     max-width: 550px;
-     margin-right: 50px;
-
-    }
-    .banner-title{
-      font-size: 24px;
-      font-weight: bold;
-      
-    }
-    .banner-description{
-      font-size: 14px;
-      font-weight: 400;
+     width: 100%;
     }
     .banner-content{
-   
+      width: 100%;
+    }
+    .banner-title{
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .banner-description{
+      font-size: 0.85rem;
+      font-weight: 400;
     }
   }
+
