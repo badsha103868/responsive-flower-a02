@@ -52,6 +52,9 @@ border-radius: none;
 border: none;
 width: 100%;
 }
+.btn-primary:hover{
+  background-color:tomato;
+}
 .navbar, .banner,.plant-section,
 .plants-lover-section,
 .latest-deal-section{
