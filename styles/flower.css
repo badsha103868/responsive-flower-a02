@@ -373,7 +373,7 @@ width: 100%;
  
  }
 .deals-left-card-1{
-  background-image: url(/images/deal-bloom.png);
+  background-image: url(../images/deal-bloom.png);
   background-size: cover;
   background-position: center;
   height: 200px;
@@ -388,7 +388,7 @@ width: 100%;
  
 }
 .deals-left-card-2{
-   background-image: url(/images/deal-ana.png);
+   background-image: url(../images/deal-ana.png);
   background-size: cover;
   background-position: center;
   height: 200px;
@@ -405,7 +405,7 @@ width: 100%;
   width: 65%;
 }
 .deal-card{
-  background-image: url(/images/deal-zabo.png);
+  background-image: url(../images/deal-zabo.png);
   background-size: cover;
   background-position: center;
   border-radius: 14px;
